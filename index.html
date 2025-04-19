@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kashif Son's - Clothing Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .products {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .products h2 {
+      margin-bottom: 20px;
+    }
+
+    .item {
+      display: inline-block;
+      margin: 20px;
+      width: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+    }
+
+    button {
+      background-color: #000;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    footer, #payment {
+      background-color: #f3f3f3;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kashif Son's</h1>
+    <nav>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#payment">Payment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="men" class="products">
+    <h2>Men's Collection</h2>
+    <div class="item">
+      <img src="https://via.placeholder.com/200x250?text=Men+T-Shirt" alt="Men T-Shirt">
+      <h3>Casual T-Shirt</h3>
+      <p>$19.99</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/200x250?text=Men+Jeans" alt="Men Jeans">
+      <h3>Classic Jeans</h3>
+      <p>$39.99</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="women" class="products">
+    <h2>Women's Collection</h2>
+    <div class="item">
+      <img src="https://via.placeholder.com/200x250?text=Women+Top" alt="Women Top">
+      <h3>Trendy Top</h3>
+      <p>$24.99</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/200x250?text=Women+Skirt" alt="Women Skirt">
+      <h3>Elegant Skirt</h3>
+      <p>$34.99</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section id="payment">
+    <h2>Payment Options</h2>
+    <p><strong>Easypaisa:</strong> 03151646607</p>
+    <p><strong>NayaPay:</strong> 0322-4042735</p>
+    <p>Please send payment and WhatsApp your receipt after placing an order.</p>
+    <a class="whatsapp-button" href="https://wa.me/923224042735" target="_blank">Order on WhatsApp</a>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us at: kashifsons@example.com</p>
+    <p>&copy; 2025 Kashif Son's</p>
+  </footer>
+
+  <script>
+    function addToCart(button) {
+      button.textContent = "Added!";
+      button.disabled = true;
+      button.style.backgroundColor = "#4CAF50";
+    }
+  </script>
+
+</body>
+</html>
